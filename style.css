@@ -1,0 +1,1376 @@
+.childMenu,
+.choiseLetters,
+.repeatLetters,
+.setting,
+.gameMenu,
+.error,
+.gameWord,
+.gameWord0,
+.gameWord1,
+.gameWord2,
+.gameWord3,
+.gameWin,
+.subject,
+.teatcher,
+.parent,
+.setting2 {
+  display: none;
+}
+
+.container {
+  height: 844px;
+  width: 390px;
+  margin: 0 auto;
+}
+
+html {
+}
+.mainMenu {
+  background-color: rgb(168, 104, 232);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 744px;
+  width: 390px;
+}
+.mainMenu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 35px 137px 35px;
+}
+.mainMenu__item {
+  margin-bottom: 30px;
+}
+.mainMenu__logo {
+  padding-top: 50px;
+  width: 152px;
+  height: 152px;
+}
+.mainMenu__childBtn {
+  width: 257px;
+  height: 59px;
+  border: none;
+  border-radius: 10px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(0deg) skew(0deg);
+  transition: transform 1s ease;
+}
+
+.mainMenu__childBtn span {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: black;
+}
+.mainBtn0-clicked {
+  background-color: #ff0000;
+}
+.mainMenu__teatcherBtn {
+  width: 257px;
+  height: 59px;
+  border: none;
+  border-radius: 10px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainMenu__teatcherBtn span {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: black;
+}
+.mainMenu__parentBtn {
+  width: 257px;
+  height: 59px;
+  border: none;
+  border-radius: 10px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainMenu__parentBtn span {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: black;
+}
+.mainMenu__searchtBtn {
+  margin-top: 20px;
+  width: 257px;
+  height: 59px;
+  border: none;
+  border-radius: 10px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainMenu__searchtBtn span {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: black;
+}
+
+.btnSearch {
+  border: none;
+  background-color: transparent;
+}
+.mainMenu__searchWindow-active {
+  display: grid;
+  grid-template: 80px 1fr / 1fr 1fr;
+  gap: 0 30px;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 350px;
+  height: 300px;
+  left: 25px;
+  background-color: grey;
+  transform: translateY(600%);
+  transition: transform 1s ease;
+  z-index: 0;
+}
+
+.searchWindow__textarea {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 19px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-self: start;
+  justify-self: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 50px;
+}
+.closeSearch {
+  align-self: start;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.search__answer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-items: center;
+  max-height: 220px;
+  overflow-y: auto;
+
+  background-color: beige;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.childMenu {
+  background-color: rgb(168, 104, 232);
+  background-size: cover;
+  height: 667px;
+  width: 375px;
+}
+
+.childMenu__inner {
+}
+
+.childMenu__list {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+  margin: 0 auto;
+  justify-items: center;
+  gap: 10px;
+}
+
+.childMenu__item0 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+.childMenu__item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+.childMenu__item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+.childMenu__item3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+  text-align: center;
+}
+.childMenu__item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: center;
+  text-align: center;
+}
+.childMenu__item5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  text-align: center;
+}
+
+.progress__title {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.childMenu__progress {
+  width: 287px;
+  height: 21px;
+  background-color: beige;
+  border-radius: 5px;
+}
+.childMenu__progress-bar {
+  width: 111px;
+  height: 21px;
+  background-color: blueviolet;
+  border-radius: 5px;
+}
+
+.childMenu__soundBtn {
+  border-radius: 8px;
+  width: 109px;
+  height: 99px;
+  border: none;
+  background-color: beige;
+  background-size: cover;
+  display: flex;
+}
+.childMenu__soundBtn img {
+  width: 90px;
+}
+
+.soundBtn__title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.childMenu__lettersBtn {
+  width: 108px;
+  height: 99px;
+  border-radius: 8px;
+  border: none;
+  background-color: beige;
+}
+
+.childMenu__lettersBtn span {
+  padding: 26px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.lettersBtn__title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.childMenu__wordsBtn {
+  width: 285px;
+  height: 84px;
+  border-radius: 8px;
+  border: none;
+  background-color: beige;
+}
+
+.childMenu__wordsBtn span {
+  padding: 26px;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+}
+
+.wordsBtn__title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.childMenu__gameBtn {
+  width: 287px;
+  height: 78px;
+  border-radius: 8px;
+  border: none;
+  background-color: beige;
+  overflow: hidden;
+  position: relative;
+}
+.childMenu__gameBtn img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.game__title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.childMenu__accountBtn {
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+}
+.childMenu__accountBtn img {
+}
+
+.account__title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.choiseLetters {
+  background-color: rgb(168, 104, 232);
+  height: 667px;
+  width: 375px;
+}
+
+.choiseLetters__inner {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  padding: 40px 52px;
+  margin: 0 auto;
+  justify-items: center;
+  gap: 70px;
+  font-style: oblique;
+}
+
+.choiseLetters__item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: beige;
+  display: flex;
+}
+.choiseLetters__item1 span {
+  align-self: center;
+  margin: 0 auto;
+}
+.choiseLetters__item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: beige;
+  display: flex;
+}
+.choiseLetters__item2 span {
+  align-self: center;
+  margin: 0 auto;
+}
+.choiseLetters__item3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: beige;
+  display: flex;
+}
+.choiseLetters__item3 span {
+  align-self: center;
+  margin: 0 auto;
+}
+.choiseLetters__item4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: beige;
+  display: flex;
+}
+.choiseLetters__item4 span {
+  align-self: center;
+  margin: 0 auto;
+}
+.choiseLetters__item5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: beige;
+  display: flex;
+}
+.choiseLetters__item5 span {
+  align-self: center;
+  margin: 0 auto;
+}
+.choiseLetters__item6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: beige;
+  display: flex;
+}
+.choiseLetters__item6 span {
+  align-self: center;
+  margin: 0 auto;
+}
+.choiseLetters__item7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  border: none;
+  width: 220px;
+  height: 35px;
+  border-radius: 10px;
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #808080;
+}
+
+.repeatLetters {
+  height: 844px;
+  width: 390px;
+  background: beige;
+}
+.repeatLetters__inner {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 22px 33px;
+  gap: 20px;
+}
+.repeatLetters__item {
+  padding-bottom: 50px;
+}
+.repeatLetters__img {
+}
+.repeatLetters__title {
+  line-height: 43px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+}
+.repeatLetters__text {
+  line-height: 19px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+}
+.repeatLetters__btn {
+  width: 220px;
+  height: 45px;
+  border-radius: 10px;
+  line-height: 29px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #808080;
+  border: none;
+}
+
+.setting {
+  background-color: #808080;
+  height: 667px;
+  width: 375px;
+}
+.setting2 {
+  background-color: #808080;
+  width: 390px;
+  height: 884px;
+}
+.setting_list {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 27px;
+  gap: 40px;
+  align-items: center;
+}
+.setting_item {
+}
+.setting__btn {
+  width: 231px;
+  height: 97px;
+  font-weight: 900;
+
+  line-height: 38px;
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: beige;
+}
+.setting2 {
+  background-color: #808080;
+  width: 390px;
+  height: 884px;
+}
+.setting2_list {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 27px;
+  gap: 100px;
+  align-items: center;
+}
+
+.setting2__btn {
+  width: 231px;
+  height: 97px;
+  font-weight: 900;
+
+  line-height: 38px;
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: beige;
+}
+
+.gameMenu {
+  height: 844px;
+  width: 390px;
+  background-color: rgb(168, 104, 232);
+}
+.gameMenu__inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+  gap: 105px;
+  padding: 50px 35px;
+}
+.gameMenu__icon {
+  width: 250px;
+  height: 103px;
+  background-color: greenyellow;
+  display: flex;
+}
+.icon__text {
+  padding-right: 50px;
+  font-size: 26px;
+  font-family: "Poetsen One", sans-serif;
+  width: 60px;
+  height: 70px;
+  font-weight: 800;
+  border-radius: 20px;
+  background-color: burlywood;
+}
+.icon__text0 {
+  padding-right: 50px;
+  font-size: 26px;
+  font-family: "Poetsen One", sans-serif;
+  width: 60px;
+  height: 70px;
+  font-weight: 800;
+  border-radius: 20px;
+  background-color: burlywood;
+}
+.icon01 {
+}
+.icon02 {
+  padding-top: 55px;
+}
+.icon03 {
+}
+.icon04 {
+  width: 50px;
+  height: 50px;
+  padding-top: 30px;
+}
+.icon05 {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.gameMenu__coming {
+  background: url(img/stroitel.png) no-repeat;
+  width: 250px;
+  height: 103px;
+  background-color: #808080;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  text-align: center;
+  align-content: center;
+}
+.gameMenu__btn {
+  width: 250px;
+  height: 103px;
+  background-color: #808080;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.error {
+  background-color: #681c1c;
+  height: 844px;
+  width: 390px;
+}
+.error__img {
+  margin-top: 60px;
+}
+.error__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.error__text {
+  width: 332px;
+  height: 192px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  background-color: beige;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+.error__btn {
+  width: 250px;
+  height: 103px;
+  background-color: #808080;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  margin-top: 100px;
+}
+
+.gameWord {
+  background-color: rgb(168, 104, 232);
+  height: 844px;
+  width: 390px;
+}
+
+.gameWord__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.gameWord__text {
+  width: 332px;
+  height: 132px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  background-color: beige;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.gameWord__btn {
+  width: 250px;
+  height: 103px;
+  background-color: #808080;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  margin-top: 70px;
+}
+.gameWord__btnNext {
+  width: 250px;
+  height: 103px;
+  background-color: #808080;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  margin-top: 100px;
+}
+
+.gameWord0 {
+  background-color: beige;
+  height: 844px;
+  width: 390px;
+}
+
+.gameWord0__inner {
+  display: flex;
+  position: relative;
+  gap: 70px 0px;
+}
+.gameWord0__0-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big4.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+  position: absolute;
+  z-index: 1;
+}
+
+.gameWord0__1-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big0.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameWord0__2-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big1.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: #681c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameWord0__3-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big3.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameWord0__4-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big1.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameWord0__5-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big0.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: palegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+}
+.gameWord0__6-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big0.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: palegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+}
+.gameWord0__7-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big0.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: palegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+}
+.gameWord0__8-active {
+  width: 128px;
+  height: 128px;
+  background: url(img/big0.png) no-repeat;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  color: palegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+}
+
+.gameWin {
+  background-color: rgb(168, 104, 232);
+  height: 844px;
+  width: 390px;
+}
+.gameWin__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 13px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poetsen One", sans-serif;
+  align-items: center;
+  padding: 45px 51px;
+  color: wheat;
+}
+.gameWin__string:first-child {
+  color: red;
+}
+
+.gameWin__btn {
+  width: 220px;
+  height: 45px;
+  border-radius: 10px;
+  line-height: 29px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #808080;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.subject {
+  height: 844px;
+  width: 390px;
+  background-color: #808080;
+}
+.setting__marquee {
+}
+.subject__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 30px;
+  gap: 42px 0px;
+}
+.subject__item {
+}
+.subject__btn0 {
+  width: 241px;
+  height: 96px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  background-color: blue;
+  color: beige;
+  border: none;
+}
+.subject__btn1 {
+  width: 241px;
+  height: 96px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  background-color: plum;
+  color: beige;
+  border: none;
+}
+
+.subject__btn2 {
+  width: 241px;
+  height: 96px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: aaaaaaaaaaaaa;
+  line-height: 48px;
+  background-color: orange;
+  color: beige;
+  border: none;
+}
+
+.subject__btn3 {
+  margin-top: 50px;
+  width: 241px;
+  height: 56px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  background-color: beige;
+  color: black;
+  border: none;
+}
+.teatcher {
+  background-color: beige;
+  height: 844px;
+  width: 390px;
+}
+.teatcher__inner {
+}
+.teatcher__list {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 50px 0px;
+  justify-items: center;
+  align-items: center;
+}
+.teatcher__item0 {
+  padding-top: 9px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+  text-align: center;
+}
+.teatcher__item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 107px;
+  height: 107px;
+  text-align: center;
+}
+.teacher__item1 img {
+  width: 107px;
+  height: 107px;
+}
+.teatcher__item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+.teatcher__item3 {
+  align-self: start;
+  padding-left: 110px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}
+.progress__title {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.teatcher__progress {
+  width: 287px;
+  height: 21px;
+  background-color: #808080;
+  border: none;
+}
+.teatcher__progress-bar {
+  width: 111px;
+  height: 21px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  border: none;
+}
+.study__btn {
+  background-color: transparent;
+  border: none;
+}
+.teatcher__title {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.wordsBtn__title {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.parent {
+  height: 844px;
+  width: 390px;
+  background-color: beige;
+}
+.parent__list {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.parent__item0 {
+  padding-top: 9px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+  text-align: center;
+}
+
+.parent__item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 107px;
+  height: 107px;
+  text-align: center;
+  align-self: start;
+}
+
+.parent__item1 img {
+  width: 107px;
+  height: 107px;
+}
+
+.parent__item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  align-self: start;
+}
+
+.parent__item3 {
+  align-self: start;
+  padding-left: 110px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}
+
+.progress__title {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.teatcher__progress {
+  width: 287px;
+  height: 21px;
+  background-color: #808080;
+  border: none;
+}
+
+.teatcher__progress-bar {
+  width: 111px;
+  height: 21px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  border: none;
+}
+
+.accParent__btn,
+.study__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.parent__title,
+.teatcher__title,
+.wordsBtn__title {
+  color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.setting__notification {
+  background-color: blanchedalmond;
+  height: 70px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in-out;
+}
+.setting__notification span {
+  padding-right: 40px;
+  font-weight: 900;
+}
+button:hover {
+  background-color: rgba(7, 6, 6, 0.2);
+  transition: background-color 0.5s ease;
+}
+.choiseWord {
+  background: #b0c4de;
+  background: linear-gradient(to bottom, #b0c4de, #87ceeb);
+  height: 844px;
+  width: 390px;
+  display: none;
+}
+
+.choiseWord__inner {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.choiseWord__item1 {
+  display: flex;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Poetsen One", sans-serif;
+  color: black;
+  background-color: #e1664b;
+  gap: 40px;
+  align-items: center;
+  height: 120px;
+}
+
+.choiseWord__logo {
+  width: 65px;
+  height: 65px;
+}
+
+.choiseWord__btn {
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e1664b;
+}
+.choiseWord__btn1 {
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e1664b;
+}
+.choiseWord__btn span {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+.choiseWord__btn1 span {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+.choiseWord__textArea {
+  margin-top: 140px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  font-family: fantasy;
+}
+.choiseWord__textArea::placeholder {
+  font-size: 30px;
+  padding-left: 30px;
+}
+.choiseWord__textArea:active {
+  font-size: 30px;
+  padding-left: 30px;
+}
+.img__link {
+  text-decoration: none;
+}
+.setting__notificationGame {
+  background-color: blanchedalmond;
+  height: 70px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in-out;
+  position: absolute;
+}
+.choiseWord__notificationGame {
+  background-color: blanchedalmond;
+  height: 70px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in-out;
+  position: absolute;
+}
+.watermark {
+  z-index: -1;
+  position: fixed;
+}
+.watermark__text {
+  font-size: 60px;
+  position: absolute;
+  opacity: 0.1;
+  font-family: Impact, fantasy;
+  font-weight: 700;
+  top: 150px;
+  animation: run 4s linear infinite;
+}
+@keyframes run {
+  0% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform-origin: bottom;
+    perspective-origin: center;
+    transform: translateX(0%) rotate(30deg) skew(0deg) perspective(3000px);
+  }
+  100% {
+    transform: translateX(355%) scale(2) skew(5deg, 5deg);
+  }
+}
+.search__list {
+  margin-top: 3px;
+  background-color: blueviolet;
+}
+.search__text {
+  font-size: 15px;
+  font-family: Impact, fantasy;
+  font-weight: 400;
+  color: white;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Логопед</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <meta charset="UTF-9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <section class="mainMenu">
+      <div class="container">
+        <div class="mainMenu__inner">
+        <div class="watermark">
+          <p class="watermark__text">LINGOLINK</p>
+        </div>
+        <ul class="mainMenu__list">
+          <li class="mainMenu__item">
+            <img class="mainMenu__logo" src="img/lingolink.png" />
+          </li>
+          <li class="mainMenu__item">
+            <button class="mainMenu__childBtn"><span>Ребёнок</span></button>
+          </li>
+          <li class="mainMenu__item">
+            <button class="mainMenu__teatcherBtn"><span>Логопед</span></button>
+          </li>
+          <li class="mainMenu__item">
+            <button class="mainMenu__parentBtn"><span>Родитель</span></button>
+          </li>
+          <li class="mainMenu__item">
+            <button class="mainMenu__searchtBtn"><span>Поиск</span></button>
+          </li>
+        </ul>
+        </div>
+        <div class="mainMenu__searchWindow-active">
+          <input type="textarea" class="searchWindow__textarea" placeholder="Введите поисковой запрос" id="searchTxt">
+          <div class="closeSearch">
+            <button class="btnSearch">
+              <img class="imgSearch" src="img/iconClose.png">
+            </button>
+          </div>
+          <ul class="search__answer">
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="childMenu">
+      <div class="container">
+        <div class="childMenu__inner">
+          <ul class="childMenu__list">
+            <li class="childMenu__item0">
+              <h1 class="progress__title">Прогресс</h1>
+              <div class="childMenu__progress">
+                <div class="childMenu__progress-bar"></div>
+              </div>
+            </li>
+            <li class="childMenu__item1">
+              <button class="childMenu__soundBtn">
+                <img src="img/free-icon-music-3857378.png" class="img__btn" />
+              </button>
+              <h1 class="soundBtn__title">Звуки</h1>
+            </li>
+            <li class="childMenu__item2">
+              <button class="childMenu__lettersBtn">
+                <span class="lettersBtn__text">Cл</span>
+              </button>
+              <h1 class="lettersBtn__title">Слоги</h1>
+            </li>
+            <li class="childMenu__item3">
+              <button class="childMenu__wordsBtn">
+                <span class="lettersBtn__text">Трактор</span>
+              </button>
+              <h1 class="wordsBtn__title">Слова</h1>
+            </li>
+            <li class="childMenu__item4">
+              <button class="childMenu__gameBtn">
+                <img src="img/words.png" class="img__btn" />
+              </button>
+              <h1 class="game__title">Игры</h1>
+            </li>
+            <li class="childMenu__item5">
+              <button class="childMenu__accountBtn">
+                <img src="img/acc.png" class="img__btn" />
+              </button>
+              <h1 class="account__title">Аккаунт</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="choiseLetters">
+      <div class="container">
+        <div class="choiseLetters__inner">
+          <div class="choiseLetters__item1"><span>Рр</span></div>
+          <div class="choiseLetters__item2"><span>Гг</span></div>
+          <div class="choiseLetters__item3"><span>Жж</span></div>
+          <div class="choiseLetters__item4"><span>Сс</span></div>
+          <div class="choiseLetters__item5"><span>Чч</span></div>
+          <div class="choiseLetters__item6"><span>Зз</span></div>
+          <button class="choiseLetters__item7">Назад</button>
+        </div>
+      </div>
+    </section>
+    <section class="repeatLetters">
+      <div class="container">
+        <ul class="repeatLetters__inner">
+          <li class="repeatLetters__item">
+            <img class="repeatLetters__img" src="img/blin.png" />
+          </li>
+          <li class="repeatLetters__item">
+            <h1 class="repeatLetters__title">
+              ПОВТОРИТЕ ТО, ЧТО УКАЗАНО НА КАРТИНКЕ
+            </h1>
+          </li>
+          <li class="repeatLetters__item">
+            <p class="repeatLetters__text">И ДЕРЖИТЕ В ТЕЧЕНИИ 3-5 СЕКУНД</p>
+          </li>
+          <li class="repeatLetters__item">
+            <button class="repeatLetters__btn">Назад</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="setting">
+      <div class="container">
+        <p class="setting__marquee">.</p>
+        <ul class="setting_list">
+          <li class="setting_item">
+            <button id="btn01"  class="setting__btn">Тема</button>
+          </li>
+          <li class="setting_item">
+            <button id="btn02" class="setting__btn">Настройки</button>
+          </li>
+          <li class="setting_item">
+            <button id="btn03" class="setting__btn">Выйти из аккаунта</button>
+          </li>
+          <li class="setting_item">
+            <button id="btn04" class="setting__btn">Назад</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gameMenu">
+      <div class="container">
+        <div class="setting__notificationGame">
+          <p>Установите слово с помощью конструктора</p>
+        </div>
+        <div class="gameMenu__inner">
+          <div class="gameMenu__icon">
+            <span>
+              <img class="icon01" src="img/lego0.png" />
+            </span>
+            <span>
+              <img class="icon02" src="img/lego1.png" />
+            </span>
+            <span> <img class="icon03" src="img/lego2.png" /> </span>
+            <span>
+              <img class="icon04" src="img/lego1.png" />
+            </span>
+            <span>
+              <img class="icon05" src="img/lego0.png" />
+            </span>
+            <p class="icon__text">Собери слово</p>
+          </div>
+
+          <div class="gameMenu__coming"><span>СКОРО</span></div>
+          <button class="gameMenu__btn">Назад</button>
+        </div>
+      </div>
+    </section>
+    <section class="error">
+      <div class="container">
+        <div class="error__inner">
+          <img class="error__img" src="/img/fooooo.png" />
+          <h1 class="error__text">УПС,НЕ ТА БУКВА. ПОПРОБУЙ ЕЩЁ РАЗ.</h1>
+          <button class="error__btn"><span>Назад</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="gameWord">
+      <div class="container">
+        <div class="gameWord__inner">
+          <h1 class="gameWord__text">СОБЕРИ СЛОВО МАМА</h1>
+          <button class="gameWord__btnNext"><span>Далее</span></button>
+          <button class="gameWord__btn"><span>Назад</span></button>
+        </div>
+    </section>
+    <section class="gameWord0">
+      <div class="container">
+        <div class="gameWord0__inner">
+          <span class="gameWord0__0"></span>
+          <span class="gameWord0__1"></span>
+          <span class="gameWord0__2"></span>
+          <span class="gameWord0__3"></span>
+          <span class="gameWord0__4"></span>
+          <span class="gameWord0__5"></span>
+          <span class="gameWord0__6"></span>
+          <span class="gameWord0__7"></span>
+          <span class="gameWord0__8"></span>
+        </div>
+      </div>
+    </section>
+    <section class="gameWin">
+      <div class="container">
+        <ul class="gameWin__list">
+<li class="gameWin__string">МОЛОДЕЦ</li>
+<li class="gameWin__string">ТЫ</li>
+<li class="gameWin__string">CОБРАЛ</li>
+<li class="gameWin__string">СЛОВО</li>
+<li class="gameWin__string"><span id="textDisplay"></span></li>
+<button class="gameWin__btn"><span>НАЗАД</span></button>
+        </ul>
+      </div>
+    </section>
+    <section class="subject">
+      <div class="container">
+        <div class="setting__notification">
+          <span id="spantext">22</span><p>цвет был установлен</p>
+        </div>
+        <ul class="subject__list">
+          <li class="subject__item">
+            <button class="subject__btn0">ГОЛУБОЙ</button>
+          </li>
+          <li class="subject__item">
+            <button class="subject__btn1">РОЗОВЫЙ</button>
+          </li>
+          <li class="subject__item">
+            <button class="subject__btn2">ОРАНЖЕВЫЙ</button>
+          </li>
+          <li class="subject__item">
+            <button class="subject__btn3">НАЗАД</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="teatcher">
+      <div class="container">
+        <div class="teatcher__inner">
+          <ul class="teatcher__list">
+            <li class="teatcher__item0">
+              <h1 class="progress__title">Прогресс</h1>
+              <div class="teatcher__progress">
+                <div class="teatcher__progress-bar"></div>
+              </div>
+            </li>
+            <li class="teatcher__item1">
+              <button class="study__btn">
+                <img src="img/acc.png"  />
+              </button>
+              <h1 class="teatcher__title">Ученик</h1>
+            </li>
+            <li class="teatcher__item2">
+              <img src="img/teatcher.png">
+              </button>
+              <h1 class="teatcher__title">Учитель</h1>
+            </li>
+            <li class="teatcher__item3"><a class="img__link" href="#">
+              <img src="img/pazzle.png">
+              <h1 class="wordsBtn__title">Конструктор заданий</h1>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="container">
+        <div class="parent__inner">
+          <ul class="parent__list">
+            <li class="parent__item0">
+              <h1 class="progress__title">Прогресс</h1>
+              <div class="teatcher__progress">
+                <div class="teatcher__progress-bar"></div>
+              </div>
+            </li>
+            <li class="parent__item1">
+              <button class="accParent__btn">
+                <img src="img/Frame 3.png"  />
+              </button>
+              <h1 class="parent__title">Аккаунт</h1>
+            </li>
+            <li class="parent__item2">
+              <img src="img/teatcher.png">
+              </button>
+              <h1 class="parent__title">Логопед</h1>
+            </li>
+            <li class="parent__item3">
+              <img src="img/aaaa.png">
+              <h1 class="parent__title">Занятия</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="setting2">
+      <div class="container">
+        <p class="setting2__marquee">.</p>
+        <ul class="setting2_list">
+          <li class="setting2_item">
+            <button class="setting2__btn">Тема</button>
+          </li>
+          <li class="setting2_item">
+            <button class="setting2__btn">Выйти из аккаунта</button>
+          </li>
+          <li class="setting2_item">
+            <button class="setting2__btn">Назад</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="choiseWord">
+      <div class="container">
+        <div class="choiseWord__notificationGame">
+        <p>Слово <span id="activeWord"></span> было установлено</p>
+      </div>
+        <header class="choiseWord__item1">
+          <img class="choiseWord__logo" src="img/lingolink.png" >
+          <h1 class="choiseWord__title">LINGOLINK</h1>
+        </header>
+        <div class="choiseWord__inner">
+          <div class="choiseWord__item">
+            <input type="textarea"  id="textarea0"class="choiseWord__textArea" placeholder="Введите слово">
+          </div>
+          <div class="choiseWord__item">
+            <button class="choiseWord__btn"><span>Отправить</span></button>
+          </div>
+          <div class="choiseWord__item">
+            <button class="choiseWord__btn1"><span>Назад</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
